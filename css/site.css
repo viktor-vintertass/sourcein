@@ -69,5 +69,6 @@ and (-webkit-device-pixel-ratio : 3) {
   
   .footer-text {
     font-size:14px; 
+    color: black;
   }
 }

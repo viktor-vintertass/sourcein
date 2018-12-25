@@ -40,21 +40,21 @@ body {
 }
 
 /* iPhone 6/7/8 */
-@media only screen and (max-width : 375px) and (max-height : 667px) {
+@media only screen and (max-width : 375px) and (max-height : 667px) and (-webkit-device-pixel-ratio : 2) {
   .footer-text {
     font-size:14px; 
   }
 }
 
 /* iPhone 6+/7+/8+ */
-@media only screen and (max-width : 414px) and (max-height : 736px) { 
+@media only screen and (max-width : 414px) and (max-height : 736px) and (-webkit-device-pixel-ratio : 3) { 
   .footer-text {
     font-size:14px; 
   }
 }
 
 /* iPhone X */
-@media only screen and (max-width : 375px) and (max-height : 812px) { 
+@media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
   .footer-text {
     font-size:14px; 
     color: black;

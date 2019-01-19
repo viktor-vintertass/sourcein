@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+.stockholm {
+  font-size: 1.2vw; 
+}
+
 .white {
 	background-color: rgba(255, 255, 255, 0.5);
 	overflow:auto;
@@ -108,8 +112,19 @@ body {
   display: none;
 }
 
+/* special case */
+@media (max-width: 1400px) {
+  .stockholm {
+    font-size: 1.4vw; 
+  }
+}
+
 /* handle low resolution on computer */
 @media (max-width: 1200px) {
+  .stockholm {
+    font-size: 1.5vw; 
+  }
+
   .main-div {
     margin-left: 12%; 
     margin-right:0%;
@@ -179,6 +194,10 @@ body {
 
 /* handle even lower resolution on computer */
 @media (max-width: 600px) {
+  .stockholm {
+    font-size: 2vw; 
+  }
+
   .profile {
     float: left;
     max-width: 90%;
@@ -214,6 +233,10 @@ body {
 
 /* handle high resolution on computer */
 @media (min-width: 1600px) {
+  .stockholm {
+    font-size: 1vw; 
+  }
+
   .profile {
     float: left;
     max-width: 90%;
@@ -232,7 +255,7 @@ body {
   }
 }
 
-/* handle high resolution on computer */
+/* handle higher resolution on computer */
 @media (min-width: 2500px) {
   .profile {
     float: left;

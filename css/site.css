@@ -366,11 +366,18 @@ body {
 
 /* iPhone 6+/7+/8+ */
 @media only screen and (max-width : 414px) { 
-  .misc-text {
-    font-size:14px; 
-    color: white;
+  .stockholm {
+    font-size: 3vw; 
   }
 
+  .white-logo {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow:auto;
+    text-align:center; 
+    padding-top:35%; 
+    padding-bottom:35%;
+  }
+  
   .profile {
     float: left;
     border-width: 0px;
@@ -379,8 +386,48 @@ body {
     min-width: 100%;
   }
 
+  .info-header {
+    color:white; 
+    text-align: center;
+    font-size: 4.5vw; 
+    font-style: italic;
+    display: block;
+    margin-left: 1%;
+    margin-top: 35%;
+  }
+  
+  .info-header2 {
+    color:white; 
+    display: table;
+    text-align: right;
+    font-size: 4.5vw; 
+    font-style: italic;
+    margin-left: 30%;
+    margin-bottom: 35%;
+  }
+
+  .main-info {
+    display: inline-table;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    margin-left: 34%;
+  }
+
+  .info-text {
+    color: white;
+    font-size: 125%;
+    margin-bottom: 0px;
+    line-height: 100%;
+  }
+
   .footer-linkedin {
     font-size:18px;
+  }
+
+  .misc-text {
+    font-size:14px; 
+    color: white;
   }
 
   .hide-mobile {

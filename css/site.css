@@ -203,6 +203,14 @@ body {
     margin-left:220px; 
     margin-top: 6%;
   }
+
+  .left-qmark {
+    font-size: 15px;
+  }
+
+.right-qmark {
+    font-size: 15px;
+  }
 }
 
 /* handle even lower resolution on computer */

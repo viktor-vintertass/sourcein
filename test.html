@@ -109,18 +109,6 @@
         //TEST
         console.log('test');
 
-        var promise = document.hasStorageAccess();
-        promise.then(
-            function (hasAccess) {
-                console.log('has access');
-                console.log(hasAccess);
-            },
-            function (reason) {
-                console.log('no access');
-                console.log(reason);
-            }
-        );
-
         document.getElementById('access').onclick = function () {
             var promise = document.requestStorageAccess();
             promise.then(
@@ -132,5 +120,17 @@
                 }
             );
         };
+
+        var promise = document.hasStorageAccess();
+        promise.then(
+            function (hasAccess) {
+                console.log('has access');
+                console.log(hasAccess);
+            },
+            function (reason) {
+                console.log('no access');
+                console.log(reason);
+            }
+        );
     })();
 </script>

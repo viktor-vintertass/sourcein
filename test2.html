@@ -6,8 +6,12 @@
 </head>
 
 <body>
+    <button id="sendToParent">SendToParent</button>
     <iframe src="https://sourcein.se/iframe" width="1000px" height="1000px"></iframe>
 </body>
 </html>
 <script>
+    document.getElementById('sendToParent').onclick = function() {
+        parent.postMessage("ville-ojoj", "*")
+    }
 </script>

@@ -177,5 +177,12 @@
         document.getElementById('saveid').onclick = function () {
             alert(getId());
         }
+
+        var testElement = document.getElementById('hej');
+        if (testElement) {
+            testElement.innerText = "funkar";
+        } else {
+            alert('not possible');
+        }
     })();
 </script>

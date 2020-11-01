@@ -12,6 +12,8 @@
     <div id="result" style="margin-top: 10px;">fade me</div>
     <div style="margin-top: 40px;"></div>
     <button id="access" style="display: none;">Get Access</button>
+    <div style="margin-top:25px"></div>
+    <button id="saveid" disabled="true">SaveId</button>
 </body>
 
 </html>
@@ -109,19 +111,46 @@
         //TEST
         console.log('test');
 
+        var sourceInKey = 'sourcein-id';
+
+        function getId() {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(sourceInKey);
+                if (c_start != -1) {
+                    c_start = c_start + sourceInKey.length + 1;
+                    c_end = document.cookie.indexOf(';', c_start);
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            var id = uuidv4();
+            document.cookie = sourceInKey + "=" + id + '; SameSite=None; Secure; Expires=Tue, 19 Jan 2038 03:14:07 UTC';
+            return id;
+        }
+
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) { var r = 16 * Math.random() | 0; return ('x' == c ? r : r & 3 | 8).toString(16) });
+        }
+
+        function accesReady() {
+            document.getElementById('saveid').disabled = false;
+        }
+
+
         document.getElementById('access').onclick = function () {
             var promise = document.requestStorageAccess();
             promise.then(
                 function () {
                     console.log('access was granted');
+                    accesReady();
                 },
                 function () {
                     console.log('access was denied');
                 }
             );
         };
-
-        var sourceinId = 'id-ville';
 
 
         if (isChrome) {
@@ -133,6 +162,8 @@
                 function (hasAccess) {
                     console.log('has access');
                     console.log(hasAccess);
+
+                    accesReady();
                 },
                 function (reason) {
                     console.log('no access');
@@ -140,6 +171,11 @@
                     document.getElementById('access').style.display = 'inherit';
                 }
             );
+        }
+
+        //save id 
+        document.getElementById('saveid').onclick = function () {
+            alert(getId());
         }
     })();
 </script>

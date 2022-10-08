@@ -37,8 +37,8 @@ body {
 }
 
 .space-between {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .vert-align {
@@ -57,14 +57,20 @@ body {
 }
 
 .profile {
-  float: left;
-  max-width: 90%;
   border-radius: 50%;
   border-color: white;
   border-width: 3px;
   border-style: solid;
   max-height: 300px;
-  position: relative;
+}
+
+.main-info {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 35%;
+  padding-bottom: 35%;
 }
 
 .info-header {
@@ -83,11 +89,6 @@ body {
   font-size: 2.0vw;
   font-style: italic;
   margin-left: 20%;
-}
-
-.main-info {
-  margin-left: 320px;
-  margin-top: 50px
 }
 
 .info-text {
@@ -165,17 +166,6 @@ body {
     padding-top: 5px;
   }
 
-  .profile {
-    float: left;
-    max-width: 90%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 3px;
-    border-style: solid;
-    max-height: 200px;
-    position: relative;
-  }
-
   .info-header {
     color: white;
     text-align: center;
@@ -192,11 +182,6 @@ body {
     font-size: 1.8vw;
     font-style: italic;
     margin-left: 30%;
-  }
-
-  .main-info {
-    margin-left: 220px;
-    margin-top: 2%;
   }
 
   .left-qmark {
@@ -224,11 +209,6 @@ body {
 
 /* handle lower resolution on computer */
 @media (max-width: 850px) {
-  .main-info {
-    margin-left: 220px;
-    margin-top: 6%;
-  }
-
   .left-qmark {
     font-size: 15px;
   }
@@ -244,17 +224,6 @@ body {
     font-size: 2vw;
   }
 
-  .profile {
-    float: left;
-    max-width: 90%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 3px;
-    border-style: solid;
-    max-height: 150px;
-    position: relative;
-  }
-
   .info-header2 {
     color: white;
     text-align: right;
@@ -263,8 +232,12 @@ body {
     margin-left: 20%;
   }
 
-  .main-info {
-    margin-top: 4%;
+  .profile {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: unset;
+    border-radius: unset;
+    border-width: 0;
   }
 
   .info-text {
@@ -284,41 +257,6 @@ body {
 @media (min-width: 1600px) {
   .stockholm {
     font-size: 1vw;
-  }
-
-  .profile {
-    float: left;
-    max-width: 90%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 3px;
-    border-style: solid;
-    max-height: 400px;
-    position: relative;
-    margin-bottom: 5px;
-  }
-
-  .main-info {
-    margin-top: 3%
-  }
-}
-
-/* handle higher resolution on computer */
-@media (min-width: 2500px) {
-  .profile {
-    float: left;
-    max-width: 90%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 3px;
-    border-style: solid;
-    max-height: 500px;
-    position: relative;
-    margin-bottom: 5px;
-  }
-
-  .main-info {
-    margin-top: 25px
   }
 }
 
@@ -354,21 +292,6 @@ body {
     font-style: italic;
     margin-left: 30%;
     margin-bottom: 35%;
-  }
-
-  .profile {
-    float: left;
-    border-width: 0px;
-    border-radius: unset;
-    max-height: unset;
-    min-width: 100%;
-  }
-
-  .main-info {
-    display: inline-table;
-    text-align: center;
-    margin-top: 25%;
-    margin-bottom: 25%;
   }
 
   .info-text {
@@ -423,14 +346,6 @@ body {
     padding-bottom: 35%;
   }
 
-  .profile {
-    float: left;
-    border-width: 0px;
-    border-radius: unset;
-    max-height: unset;
-    min-width: 100%;
-  }
-
   .info-header {
     color: white;
     text-align: center;
@@ -449,13 +364,6 @@ body {
     font-style: italic;
     margin-left: 30%;
     margin-bottom: 35%;
-  }
-
-  .main-info {
-    display: inline-table;
-    text-align: center;
-    margin-top: 32%;
-    margin-bottom: 32%;
   }
 
   .info-text {

@@ -32,6 +32,15 @@ body {
   bottom: 0;
 }
 
+.fa-phone {
+  font-size: 1.2em !important;
+}
+
+.space-between {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .vert-align {
   width: 100%;
   margin: 0;
@@ -56,7 +65,6 @@ body {
   border-style: solid;
   max-height: 300px;
   position: relative;
-  margin-bottom: 5px;
 }
 
 .info-header {
@@ -166,7 +174,6 @@ body {
     border-style: solid;
     max-height: 200px;
     position: relative;
-    margin-bottom: 5px;
   }
 
   .info-header {
@@ -246,7 +253,6 @@ body {
     border-style: solid;
     max-height: 150px;
     position: relative;
-    margin-bottom: 5px;
   }
 
   .info-header2 {
@@ -258,7 +264,6 @@ body {
   }
 
   .main-info {
-    margin-left: 160px;
     margin-top: 4%;
   }
 
@@ -294,7 +299,6 @@ body {
   }
 
   .main-info {
-    margin-left: 420px;
     margin-top: 3%
   }
 }
@@ -314,7 +318,6 @@ body {
   }
 
   .main-info {
-    margin-left: 520px;
     margin-top: 25px
   }
 }
@@ -366,7 +369,6 @@ body {
     text-align: center;
     margin-top: 25%;
     margin-bottom: 25%;
-    margin-left: 32%;
   }
 
   .info-text {
@@ -454,7 +456,6 @@ body {
     text-align: center;
     margin-top: 32%;
     margin-bottom: 32%;
-    margin-left: 32%;
   }
 
   .info-text {

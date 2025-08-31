@@ -29,18 +29,11 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-
 ## Custom
 
-notes
-- if you use the old state "newValue" when updating etc using "setNewValue", for example if it was a counter and you did counter++. 
+### Notes
+#### Note1
+if you use the old state "newValue" when updating etc using "setNewValue", for example if it was a counter and you did counter++. 
 remeber "newValue" is not updated until next render, meaning if you do 
 do use newValue and then modify it will
 setNewValue, and then want to use that
@@ -54,68 +47,41 @@ setNewValue((currentNewValue) => {
     return currentNewValue++
 })
 
-note2:
+#### Note2
 list.map((item, index))
 dont use index since that will change when item is added/deleted
 
+#### Note3
 onclick has to be written as
 () => function()
 and not function() directly, because
 then it's being invoked
 
-
+#### Note4
 can do something called short circuit
 ->
 {list.length === 0 && "No items"}
 will simple print the text "No items" when the list is empty
 
+#### Note5
 useEffect for storage ->
-
   useEffect(() => {
 
   },[list])
-
 means runs this every time the second object, list in this case change
 
+#### Note6
 hooks has to be at top of the file, 
 and cant run conditional
 
-
-hook
-function
-jsx
-
-
+#### Note7
 #tailwind css
-
 @media (min-width: 300px) and  (max-width: 600px){
-
 }
 
 replaced with:
-
 @media (300px <= width <= 600px) or (orientation : landscape){
-
 }
-
-##learn tailwind in 30min 
-documentation
-
-
-- container class -> most default
-- size-48 -> both with and heigt square
-- space, grap
-- line-clamp-3, truncate
-- ring (border round buttons, can still have border, focus state) 
-- prose -> makes s nice markdown class directly without
-
-vscode plugisn
-#tailwind css intellisense
-
-npm install tailwindcss @tailwindcss/vite
-npm install -D prettier prettier-plugin-tailwindcss
-
-https://tailwindcss.com/docs/installation/using-vite
 
 container, can be more specific, style related to the container you
 are inside. cqw -> vw , cqh -> vh.

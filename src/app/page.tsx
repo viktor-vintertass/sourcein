@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 export default function Home() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-3 row-start-2 items-center">
         <Image 
-          src="/logo_transparent.png"
+          src={`${basePath}/logo_transparent.png`}
           alt="Company logotype of Sourcein"
           priority={true}
           width={397}
@@ -28,7 +29,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/phone.svg"
+            src={`${basePath}/phone.svg`}
             alt="File icon"
             width={18}
             height={18}
@@ -43,7 +44,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/linkedin.svg"
+            src={`${basePath}/linkedin.svg`}
             alt="Window icon"
             width={18}
             height={18}
@@ -58,7 +59,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/email.svg"
+            src={`${basePath}/email.svg`}
             alt="Windowd icon"
             width={18}
             height={18}

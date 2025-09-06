@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20" style={{ minHeight: "95vh" }} >
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"  >
       <main className="flex flex-col gap-3 row-start-2 items-center">
         <Image 
           src="/logo_transparent.png"
@@ -20,7 +20,8 @@ export default function Home() {
         <div className="flex gap-4 items-center flex-col sm:flex-row">
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <div className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center" style={{ height: "10px", width: "100%"}}></div>
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center footer-icons">
         <a
           className="flex items-center gap-2 noselect"
           href="tel:+46707585307"

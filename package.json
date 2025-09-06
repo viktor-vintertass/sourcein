@@ -7,7 +7,7 @@
     "predeploy": "npm run build",
     "dev": "next dev",
     "build": "next build && npm run copy-files",
-    "copy-files": "copy CNAME out\\CNAME && copy .nojekyll out\\.nojekyll && xcopy public\\fonts out\\sourcein\\fonts\\ /E /I /Y",
+    "copy-files": "copy CNAME out\\CNAME && copy .nojekyll out\\.nojekyll",
     "deploy": "gh-pages -d out",
     "output": "next export",
     "start": "next start",

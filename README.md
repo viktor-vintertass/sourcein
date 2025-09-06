@@ -17,6 +17,5 @@ npm run dev
 ### Deploy script to Github pages
 
 ```bash
-npm run build
 npm run deploy
 ```

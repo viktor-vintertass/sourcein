@@ -9,8 +9,7 @@ npm run dev
 
 ## To deploy
 - More information can be found here: https://blog.logrocket.com/gh-pages-react-apps/
-- Add an empty `.nojekyll` + `CNAME` file in the root in the branch (gh pages)
-- We also have dupliate fonts folder to handle both locally and production
+- We copy some files during build: `copy CNAME out\\CNAME && copy .nojekyll out\\.nojekyll && xcopy public\\fonts out\\sourcein\\fonts\\ /E /I /Y`
 - We use the branch `gh-pages` for our output (index.html is located there)
 - We use the `master` branch for our development
 

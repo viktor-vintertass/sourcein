@@ -14,7 +14,7 @@ export default function Home() {
           height={188}
           style={{
             height: "auto",
-            width: "125px",
+            width: "75px",
           }}
         /> 
         <h1 className="felx justify-center noselect-without-pointer" style={{ fontSize: "2.3rem", fontFamily: "Montserrat" }}>Sourcein</h1>

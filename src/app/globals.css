@@ -65,3 +65,9 @@ html, body {
   padding: 0.5rem;
   background: transparent;  
 }
+
+@media (max-height: 350px) {
+  .footer-icons {
+    display: none;
+  }
+}

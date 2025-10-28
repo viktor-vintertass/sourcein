@@ -16,13 +16,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sourcein",
   description: "Consulting Company",
+  
 };
 
 export const viewport: Viewport = {
     width: "device-width",
     initialScale: 1.0,
     maximumScale: 1.0,
-    userScalable: false
+    userScalable: false,
+    viewportFit: "cover"
 }
 
 export default function RootLayout({
@@ -32,6 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google" content="notranslate" />
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#000000"/>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

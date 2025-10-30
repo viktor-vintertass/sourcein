@@ -42,7 +42,7 @@ html, body {
 
 @media (orientation: landscape) {
   main {
-    transform: translateY(-45px);
+    transform: translateY(-25px);
   }
 }
 

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-[100dvh]"  >
-      <main className="flex flex-col gap-3 row-start-2 items-center justify-center min-h-[100dvh]">
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-[100dvh]">
+      <main className="flex flex-col gap-3 row-start-2 items-center justify-center">
         <Image 
           src="/logo_transparent.png"
           alt="Company logotype of Sourcein"
